@@ -41,7 +41,7 @@ body {
   clear: both; }
 
 #banner {
-  background-image: url(images/banner_background.jpeg);
+  background-image: url(/images/banner_background.jpeg);
   background-repeat: no-repeat;
   background-size: cover; }
   #banner header {
