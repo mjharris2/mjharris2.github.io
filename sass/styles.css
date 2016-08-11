@@ -47,6 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 .row {
   width: 100%;
   margin-bottom: 2em; }
+  .row a {
+    text-decoration: none; }
   .row:before, .row:after {
     content: "";
     display: table; }
