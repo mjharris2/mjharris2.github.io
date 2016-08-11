@@ -1,0 +1,155 @@
+$pink: #ea48eb
+$white: #fff
+$grey: #414148
+
+@mixin bg_img($url, $size, $position)
+    background-image: url($url)
+    background-size: $siz
+    background-position: $position
+
+*
+    box-sizing: border-box
+
+body
+    font-family: "Monterrat", sans-serif
+    -webkit-font-smoothing: antialiased
+
+h1, h2, h3, h4, h5, h6
+    font-family: "Lustria", serif
+    font-weight: 400
+
+.cf:before, .cf:after
+    content: ""
+    display: table
+
+.cf:after
+    clear: both
+
+.wrapper
+    width: 1000px
+    max-width: 100%
+    margin: 0 auto
+
+.banner
+    padding: 5em 0
+    .logo
+        float: left
+    h1
+        color: $grey
+        text-align: right
+        font-size: 5em
+        display: inline
+        float: right
+        margin: 0
+
+.logo
+    background: $pink
+    border-radius: 100%
+    width: 75px
+    height: 75px
+    line-height: 75px
+    text-align: center
+    color: $white
+    font-size: 1.1em
+    font-family: "Lustria"
+
+.row
+    width: 100%
+    margin-bottom: 2em
+    &:before, &:after
+        content: ""
+        display: table
+    &:after
+        clear: both
+.work
+    background-color: $grey
+    padding: 5em 0
+    .card
+        background: $white
+        border-radius: .35em
+        height: 450px
+        display: table
+        background-repeat: no-repeat
+    .card_full
+        width: 100%
+    .card_half
+        width: 48.5%
+        float: left
+    .card_third
+        width: 75%
+        float: left
+    .left
+        margin-right: 1.5%
+    .right
+        margin-left: 1.5%
+    .tall
+        height: 700px
+    .card_1
+        // @include bg_img('' 80%, 280px, 20px)
+    .card_inner
+        display: table-cell
+        vertical-align: middle
+        height: 100%
+        padding: 1.5em 12%
+        color: $white
+        p
+            font-size: 1em
+            text-transform: uppercase
+            font-weight: 700
+        h2
+            font-size: 4em
+            margin: 0
+    .pink, .green, .puprle, .blue
+        border-radius: .35em
+    .pink
+        background-color: rgba(230, 56, 222, .6)
+    .green
+        background-color: rgba(80, 218, 93, .6)
+    .purple
+        background-color: rgba(145, 89, 219,  .6)
+    .blue
+        background-color: rgba(131, 226, 245, .6)
+    .view_more
+        width: 25%
+        float: left
+        height: 450px
+        padding-left: 3em
+        p
+            font-size: 1.25em
+            font-weight: 700
+            line-height: 450px
+            margin: 0
+            color: rgba(146, 146, 171, 1)
+        a
+            text-decoration: none
+            &:hover
+                p
+                    color: $pink
+
+footer
+    padding: 3em 0
+    .logo
+        float: left
+        margin: 0
+    ul
+        list-style: none
+        margin: 0
+        padding-top: 1em
+        li
+            display: inline
+            float: left
+            margin-left: 4em
+            .title
+                text-transform: uppercase
+                font-weight: 700
+                font-size: .75em
+                display: block
+                padding-bottom: .5em
+            .link
+                font-family: "Lustria"
+                font-size: 1.75em
+                a
+                    color: $grey
+                    text-decoration: none
+                    &:hover
+                        color: $pink

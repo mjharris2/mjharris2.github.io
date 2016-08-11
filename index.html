@@ -1,18 +1,96 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio Design by Michael Harris</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lustria' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/styles.min.css">
+    </head>
+    <body>
+        <section class="banner cf">
+            <div class="wrapper">
+                <p class="logo">
+                    mc
+                </p>
+                <h1>Designer.<br>
+                Coder.<br>
+                Maker.</h1>
+            </div>
+        </section>
+        <section class="work">
+            <div class="wrapper">
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+                <div class="row">
+                    <div class="card card_full card_1">
+                        <div class="card_inner pink">
+                            <p>
+                                Design Resources
+                            </p>
+                            <h2>Meticulously crafted UI design assets</h2>
+                        </div>
+                    </div>
+                </div>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+                <div class="row">
+                    <div class="card card_half left card_2 tall">
+                        <div class="card_inner green">
+                            <p>
+                                Design for Developers
+                            </p>
+                            <h2>Devs Learn Design</h2>
+                        </div>
+                    </div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+                    <div class="card card_half right card_3 tall">
+                        <div class="card_inner purple">
+                            <p>
+                                Lol Colors
+                            </p>
+                            <h2>Curated Color Palettes</h2>
+                        </div>
+                    </div>
+                </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+                <div class="row">
+                    <div class="card card_third card_4">
+                        <div class="card_inner blue">
+                            <p>
+                                Unicasts
+                            </p>
+                            <h2>Design to code web apps</h2>
+                        </div>
+                    </div>
+
+                    <div class="view_more">
+                        <a href="#">
+                            <p>
+                                View all projects
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="wrapper cf">
+                <p class="logo">
+                    mc
+                </p>
+                <ul class="cf">
+                    <li>
+                        <span class="title">Get in Touch</span>
+                        <span class="link"><a href="#">Email</a></span>
+                    </li>
+                    <li>
+                        <span class="title">Follow me on:</span>
+                        <span class="link"><a href="#">Twitter</a> &nbsp; <a href="#">Dribble</a> &nbsp; <a href="#">Instagram</a> &nbsp;</span>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
